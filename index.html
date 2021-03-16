@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Osa's Light and Sound Memory Game</h1>
+    
+    <p>
+      Hey, Welcome to my game!!! Repeat back the pattern by pressing buttons.
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      End
+    </button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1);imageVisibleA1()" onmouseup="stopTone();imageVisibleB1()">
+        <img id="myface" src="https://cdn.glitch.com/4d5601c4-c1d7-46c5-9902-261744009edd%2F1.jpg?v=1615704568528" class="hidden" alt="my face" style="width:50px;height:100px">
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2);imageVisibleA2()" onmouseup="stopTone();imageVisibleB2()">
+        <img id="myface2" src="https://cdn.glitch.com/4d5601c4-c1d7-46c5-9902-261744009edd%2F2.jpg?v=1615704571224" class="hidden" alt="my face" style="width:50px;height:100px">
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3);imageVisibleA3()" onmouseup="stopTone();imageVisibleB3()">
+        <img id="myface3" src="https://cdn.glitch.com/4d5601c4-c1d7-46c5-9902-261744009edd%2F3.jpg?v=1615704574154" class="hidden" alt="my face" style="width:50px;height:100px">
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4);imageVisibleA4()" onmouseup="stopTone();imageVisibleB4()">
+        <img id="myface4" src="https://cdn.glitch.com/4d5601c4-c1d7-46c5-9902-261744009edd%2F4.jpg?v=1615704578728" class="hidden" alt="my face" style="width:50px;height:100px">
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5);imageVisibleA5()" onmouseup="stopTone();imageVisibleB5()">
+        <img id="myface5" src="https://cdn.glitch.com/4d5601c4-c1d7-46c5-9902-261744009edd%2F5.jpg?v=1615704581852" class="hidden" alt="my face" style="width:50px;height:100px">
+      </button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6);imageVisibleA6()" onmouseup="stopTone();imageVisibleB6()">
+        <img id="myface6" src="https://cdn.glitch.com/4d5601c4-c1d7-46c5-9902-261744009edd%2F6.jpg?v=1615704583533" class="hidden" alt="my face" style="width:50px;height:100px">
+      </button>
+    </div>
+
+    
+  </body>
+</html>
